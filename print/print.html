@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Order</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(90deg, #B71C1C, #E57373);
+    color: white;
+    position: relative;
+}
+
+footer p {
+    background: url('line.png') center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+footer img {
+    position: relative;
+    width: 50px;
+    top: -20px;
+
+.container {
+    padding: 20px;
+    background: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #E57373, #B71C1C);
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.company-info h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.company-info p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.purchase-order {
+    display: flex;
+    align-items: center;
+}
+
+.decorative-lines {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.line {
+    width: 5px;
+    height: 20px;
+    background-color: #FF8A80;
+    margin-bottom: 5px;
+}
+
+.purchase-order h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.supplier, .document-references {
+    width: 48%;
+}
+
+.supplier h2, .document-references h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.order-details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-details th, .order-details td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.order-details th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.order-details tfoot td {
+    font-weight: bold;
+}
+
+.terms {
+    margin-top: 20px;
+}
+
+.terms h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.terms ul {
+    list-style: none;
+    padding: 0;
+}
+
+.terms ul li {
+    margin-bottom: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.signature img {
+    width: 100px;
+    height: auto;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Synergy Logo">
+                <div class="company-info">
+                    <h1>SYNERGY</h1>
+                    <p>TECHNOLOGY SOLUTIONS W.L.L</p>
+                </div>
+            </div>
+            <div class="purchase-order">
+                <div class="decorative-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <h1>Purchase Order</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="supplier">
+                <h2>Supplier</h2>
+                <p>Gulf Insurance Group (Gulf) BSC (C) - QATAR BRANCH</p>
+                <p>Qatar Financial Centre, Office 604, 6th Floor</p>
+                <p>QFC Tower Diplomatic Area, West Bay</p>
+                <p>DOHA - Qatar</p>
+            </div>
+            <div class="document-references">
+                <h2>Document References</h2>
+                <p>Date: 08-05-2024</p>
+                <p>PO No: SYN-INV-5755</p>
+                <p>Quote Ref: 16788</p>
+            </div>
+        </div>
+        <table class="order-details">
+            <thead>
+                <tr>
+                    <th>SN</th>
+                    <th>Description</th>
+                    <th>Qty</th>
+                    <th>Unit Price</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Yealink S20 - Yeastar MYPBX S20<br>Yeastar O2 - Connect 2 analog PSTN (POTS) lines.</td>
+                    <td>1 Pcs.</td>
+                    <td>QAR 1,560.00</td>
+                    <td>QAR 1,560.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Fanvil X301G Entry Level IP Phone</td>
+                    <td>4 Pcs.</td>
+                    <td>QAR 200.00</td>
+                    <td>QAR 800.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3CX 4-SC-PRO: [Software]<br>3CX Phone system Professional Edition 4 SC</td>
+                    <td>1 Pcs.</td>
+                    <td>QAR 1,950.00</td>
+                    <td>QAR 1,950.00</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Pre-Used Server, Dell PowerEdge R720, Dual CPU, 32 GB RAM, Dual Power Supply, 2 x 900 GB HDD, 6 Month Warranty</td>
+                    <td>1 Pcs.</td>
+                    <td>QAR 3,500.00</td>
+                    <td>QAR 3,500.00</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Installation, configuration and one year support</td>
+                    <td>1 Pcs.</td>
+                    <td>QAR 2,000.00</td>
+                    <td>QAR 2,000.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Gross Amount:</td>
+                    <td>QAR 9,810.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Discount:</td>
+                    <td>QAR 810.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Net Amount:</td>
+                    <td>QAR 9,000.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="terms">
+            <h2>Terms & Conditions:</h2>
+            <ul>
+                <li>Validity of offer: 7 Days</li>
+                <li>Payment Terms: 100% Advance with LPO.</li>
+                <li>Payment Method: Cash / Cheque</li>
+                <li>Device Warranty: 1 Year against manufacturing defects. Warranty is void for any kind of physical damages.</li>
+                <li>Client need to arrange the network socket and internet point near to device.</li>
+                <li>Lead Time: Ex-stock while quoting.</li>
+                <li>Installation Time: 7-10 Days.</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>Thanks & Regards,</p>
+            <p>Md. Zabed Hossain</p>
+            <div class="signature">
+                <img src="signature.png" alt="Signature">
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>Zone. 55, Street. 340, Building 488, Salwa Road | PO Box # 1511 | Doha - Qatar | Tel: +974 44902839 | Fax: +974 44501777</p>
+            <p>Email: info@stsqa.com | www.stsqa.com</p>
+        </div>
+
+        Purchase Order
+         
+    </div>
+</body>
+</html>

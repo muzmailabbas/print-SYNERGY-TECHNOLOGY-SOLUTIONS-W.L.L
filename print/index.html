@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #E57373, #B71C1C);
+            color: white;
+        }
+        img {
+            width: 210px;
+        }
+        .purchase-order {
+            display: flex;
+            align-items: center;
+            margin-right: 55px;
+            margin-bottom: 55px;
+        }
+        .decorative-img img {
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+            width: 40px;
+        }
+        .purchase-order h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 600;
+        }
+        footer {
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(90deg, #B71C1C, #E57373);
+            color: white;
+            position: relative;
+        }
+        footer p {
+            z-index: 1;
+        }
+        footer img {
+            position: absolute;
+            left: 480px;
+            width: 50px;
+            bottom: 80px;
+        }
+        @media print {
+            header, footer {
+                margin: 0px;
+                padding: 10px 10px;
+            }
+            .purchase-order {
+                margin-right: 5px;
+            margin-bottom: 10px;
+            }
+            .purchase-order h1 {
+                font-size: 2em;
+            }
+            footer p {
+                background: none;
+            }
+            footer img {
+                left: 50px;
+                bottom: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="section">
+    <header>
+        <img src="logo.webp" alt="">
+        <div class="purchase-order">
+            <div class="decorative-img">
+                <img src="line.webp" alt="">
+            </div>
+            <h1>Purchase Order</h1>
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <footer>
+        <p>Zone. 55, Street. 340, Building. 488, Salwa Road | PO Box # 1511 | Doha - Qatar | Tel: +974 44902839 | Fax: +974 44501777 <br><br> | Email: info@stsqa.com | www.stsqa.com</p>
+        <img src="line.png" alt="">
+        <br><br>
+    </footer>
+</div>
+</body>
+</html>
